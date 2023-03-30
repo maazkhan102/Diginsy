@@ -1,0 +1,114 @@
+.main1 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f1f1;
+}
+
+
+.main-image1 {
+    position: relative;
+     background : url("/src/Assets/OurWorkbg.png") no-repeat center; 
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container1 h1 {
+    margin: 0;
+    font-size: 66px;
+}
+
+.container1 h1 span {
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen1 {
+    margin: 20px;
+    display: block;
+    font-size: 40px;
+}
+
+
+
+/* Our works data */
+.row, .half-row {
+    display: flex;
+  }
+  
+  .row {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .half-row {
+    width: 320px;
+    flex-grow: 1;
+    justify-content: space-around;
+  
+  }
+
+.row .half-row .cell a img{
+    width: 430px;
+}
+@media only screen and (min-width:10px) and (max-width:600px){
+.half-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+}
+.cell a img{
+    width: 250px;
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:850px){
+    .half-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+    .row{
+        width: 100%;
+    }
+    
+    .cell{
+        display: flex;
+        justify-content: center;
+    }
+    .cell a img{
+        width: 350px;
+    }
+    }
+
+@media only screen and (min-width:850px) and (max-width:1300px){
+    .cell a img{
+        width: 400px;
+    }
+}
